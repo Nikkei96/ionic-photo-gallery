@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "tabWidth": 2,
+  "printWidth": 80,
+  "semi": true,
+  "useTabs": false,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "singleAttributePerLine": true,
+  "arrowParens": "always",
+  "trailingComma": "all",
+  "quoteProps": "as-needed",
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": ".*rc",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ],
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-multiline-arrays"
+  ],
+  "multilineArraysWrapThreshold": 2,
+  "importOrder": [
+    "^node:(.*)$",
+    "^(vue(.*))$",
+    "^(@ionic(.*))$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/(.*)$",
+    "^~/(.*)$",
+    "^[./]",
+    "<TYPES>",
+    "^(.*)(sass|css|scss)$"
+  ],
+  "importOrderCaseInsensitive": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderParserPlugins": [
+    "classProperties",
+    "decorators-legacy",
+    "jsx",
+    "typescript"
+  ]
+}
