@@ -27,7 +27,6 @@ const showActionSheet = async (photo: UserPhoto) => {
         text: 'Удалить',
         role: 'destructive',
         icon: trash,
-        cssClass: ['background-color: green'],
         handler: () => {
           deletePhoto(photo);
         },

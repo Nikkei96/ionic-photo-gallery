@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import legacy from '@vitejs/plugin-legacy';
 import vue from '@vitejs/plugin-vue';
 import path from 'path';
@@ -14,9 +13,5 @@ export default defineConfig({
   },
   optimizeDeps: {
     exclude: ['@ionic/pwa-elements'],
-  },
-  test: {
-    globals: true,
-    environment: 'jsdom',
   },
 });
